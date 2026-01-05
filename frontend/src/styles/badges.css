@@ -1,0 +1,355 @@
+/* =========================================
+   badges.css — Category, Copies, Status, Waitlist
+   ========================================= */
+
+/* Base Badge */
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+/* Category + Copies */
+.category-badge,
+.preview-category,
+.copies-badge,
+.preview-copies {
+  background: var(--accent-light, #e0e7ff);
+  color: var(--accent-dark, #3730a3);
+  border-radius: 20px;
+  padding: 0.3rem 0.7rem;
+}
+
+/* Available / Copies Status */
+.available-badge,
+.status-badge {
+  border-radius: 20px;
+  padding: 0.25rem 0.6rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+/* Positive State */
+.available-badge.has-copies,
+.status-badge.available {
+  background: var(--success-bg, #d1fae5);
+  color: var(--success-text, #065f46);
+}
+
+/* Negative State */
+.available-badge.no-copies,
+.status-badge.unavailable {
+  background: var(--danger-bg, #fee2e2);
+  color: var(--danger-text, #991b1b);
+}
+
+/* Waitlist */
+.waitlist-badge {
+  background: var(--warning-bg, #fef3c7);
+  color: var(--warning-text, #92400e);
+  border-radius: 20px;
+  padding: 0.25rem 0.6rem;
+  font-weight: 600;
+}
+/* Admin Login Page — Glassmorphic Soft Teal Theme */
+.admin-login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e2f8f6;
+  font-family: Inter, sans-serif;
+  position: relative;
+  overflow: hidden;
+  padding: 2rem;
+}
+
+/* Floating abstract shapes */
+.admin-login-page::before,
+.admin-login-page::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.25;
+  z-index: 0;
+}
+.admin-login-page::before {
+  width: 250px;
+  height: 250px;
+  background: #16a085;
+  top: -60px;
+  left: -60px;
+}
+.admin-login-page::after {
+  width: 350px;
+  height: 350px;
+  background: #0f766e;
+  bottom: -80px;
+  right: -80px;
+}
+
+/* Login Container */
+.login-container {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  padding: 2.5rem 2rem;
+  border-radius: 25px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+  width: 100%;
+  max-width: 420px;
+  z-index: 1;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.login-container:hover {
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.18);
+}
+
+/* Header */
+.login-header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+}
+.login-header p {
+  font-size: 1rem;
+  color: #475569;
+  margin-bottom: 1.5rem;
+}
+
+/* Error Alert */
+.error-alert {
+  background: #fee2e2;
+  color: #991b1b;
+  padding: 0.75rem 1rem;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Form Groups */
+.login-form .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.25rem;
+  text-align: left;
+}
+.login-form label {
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  color: #111827;
+}
+.login-form input {
+  padding: 0.65rem 1rem;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  font-size: 0.95rem;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  color: #111827;
+  box-shadow: inset 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.25s ease;
+}
+.login-form input::placeholder {
+  color: #64748b;
+}
+.login-form input:focus {
+  box-shadow: inset 0 6px 16px rgba(0, 0, 0, 0.12);
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Button */
+.btn-large.btn-primary {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border-radius: 25px;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff;
+  background: linear-gradient(135deg, #16a085, #0f766e);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+.btn-large.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+}
+.btn-large.btn-primary:disabled {
+  background: rgba(16, 118, 110, 0.6);
+  cursor: not-allowed;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 2rem 1.5rem;
+  }
+}
+/* ------------------- General Page ------------------- */
+.book-details-page {
+  font-family: "Inter", "Roboto", sans-serif;
+  background: #f0fafd;
+  padding: 30px 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* ------------------- Container ------------------- */
+.book-details-container {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  padding: 25px 30px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* ------------------- Header ------------------- */
+.book-details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.book-details-header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #111;
+}
+
+.status-badge {
+  padding: 5px 12px;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.status-badge.available {
+  background: #d4f8e8;
+  color: #008080;
+}
+
+.status-badge.unavailable {
+  background: #ffd4d4;
+  color: #ff4d4d;
+}
+
+/* ------------------- Book Details ------------------- */
+.book-details-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.detail-row strong {
+  font-weight: 600;
+}
+
+.detail-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.book-description-full {
+  line-height: 1.5;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* ------------------- Waitlist ------------------- */
+.detail-section p {
+  margin: 0;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* ------------------- Buttons ------------------- */
+.book-actions {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.btn-large {
+  padding: 12px 22px;
+  border-radius: 12px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: 0.2s;
+}
+
+.btn-primary {
+  background: #008080;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #00b3b3;
+}
+
+.btn-secondary {
+  background: #ff8800;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background: #ffaa33;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #008080;
+  color: #008080;
+}
+
+.btn-outline:hover {
+  background: #008080;
+  color: #fff;
+}
+
+/* ------------------- Loading & Error ------------------- */
+.loading,
+.error-message {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* ------------------- Responsive ------------------- */
+@media (max-width: 480px) {
+  .book-details-container {
+    padding: 20px;
+  }
+
+  .book-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

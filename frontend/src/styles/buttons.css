@@ -1,0 +1,202 @@
+/* Buttons */
+.btn-view,
+.btn-primary,
+.btn-secondary,
+.btn-outline,
+.btn-delete {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+  display: inline-block;
+}
+
+.btn-view {
+  background: var(--primary-color);
+  color: white;
+}
+
+.btn-view:hover {
+  background: #1d4ed8;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  color: white;
+}
+.btn-primary:hover {
+  background: #1d4ed8;
+}
+
+.btn-secondary {
+  background: var(--secondary-color);
+  color: white;
+}
+.btn-secondary:hover {
+  background: #334155;
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+.btn-outline:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+.btn-delete {
+  background: var(--danger-color);
+  color: white;
+}
+.btn-delete:hover {
+  background: #dc2626;
+}
+
+.btn-large {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+}
+
+.btn-icon {
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.btn {
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Soft primary */
+.btn-primary {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+.btn-primary:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+/* Accent (lime) */
+.btn-accent {
+  background: var(--secondary-color);
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+}
+.btn-accent:hover {
+  background: var(--accent-color);
+  color: #ffffff;
+}
+
+/* Danger (coral) */
+.btn-danger {
+  background: var(--secondary-color);
+  color: var(--danger-color);
+  border: 2px solid var(--danger-color);
+}
+.btn-danger:hover {
+  background: var(--danger-color);
+  color: white;
+}
+
+/* Outline / ghost */
+.btn-outline {
+  background: transparent;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+.btn-outline:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.btn-sm {
+  padding: 0.4rem 0.75rem;
+  font-size: 0.9rem;
+}
+.btn-lg {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.02rem;
+}
+/* buttons.css — soft-style buttons (light background, colored text/border) */
+.btn {
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Soft primary */
+.btn-primary {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+.btn-primary:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+/* Accent (lime) */
+.btn-accent {
+  background: var(--secondary-color);
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+}
+.btn-accent:hover {
+  background: var(--accent-color);
+  color: #ffffff;
+}
+
+/* Danger (coral) */
+.btn-danger {
+  background: var(--secondary-color);
+  color: var(--danger-color);
+  border: 2px solid var(--danger-color);
+}
+.btn-danger:hover {
+  background: var(--danger-color);
+  color: white;
+}
+
+/* Outline / ghost */
+.btn-outline {
+  background: transparent;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+.btn-outline:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.btn-sm {
+  padding: 0.4rem 0.75rem;
+  font-size: 0.9rem;
+}
+.btn-lg {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.02rem;
+}

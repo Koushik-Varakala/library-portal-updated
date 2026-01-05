@@ -1,0 +1,210 @@
+.table-container-enhanced,
+.admin-table-container,
+.borrowed-table-container {
+  overflow-x: auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+.books-table-enhanced,
+.admin-table,
+.borrowed-table,
+.activity-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.books-table-enhanced th,
+.books-table-enhanced td,
+.admin-table th,
+.admin-table td,
+.borrowed-table th,
+.borrowed-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.books-table-enhanced thead,
+.admin-table th,
+.borrowed-table th {
+  background: #f1f5f9;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+.books-table-enhanced tbody tr:hover,
+.admin-table tbody tr:hover,
+.borrowed-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+.selected-row {
+  background: #e0f2fe !important;
+}
+
+.checkbox-col {
+  width: 50px;
+  text-align: center;
+}
+.checkbox-col input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.book-details-cell {
+  max-width: 350px;
+}
+.book-title-admin {
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+}
+.book-author-admin {
+  color: var(--secondary-color);
+  font-size: 0.875rem;
+  font-style: italic;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: transparent;
+}
+.table th,
+.table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+.table thead th {
+  background: var(--surface-color);
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  color: var(--muted-text);
+}
+.table tbody tr:hover {
+  background: var(--secondary-color);
+}
+
+/* specific books table */
+.books-table-enhanced {
+  width: 100%;
+  border-collapse: collapse;
+}
+.books-table-enhanced thead {
+  background: #f1f5f9;
+}
+.books-table-enhanced th {
+  padding: 1.1rem;
+  font-weight: 600;
+  color: var(--muted-text);
+  font-size: 0.88rem;
+  text-transform: uppercase;
+}
+.books-table-enhanced td {
+  padding: 1.1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+.books-table-enhanced tbody tr:hover {
+  background: var(--background-mint);
+}
+
+.selected-row {
+  background: #e0f2fe !important;
+}
+.checkbox-col {
+  width: 56px;
+  text-align: center;
+}
+.checkbox-col input {
+  width: 18px;
+  height: 18px;
+}
+
+.book-details-cell {
+  max-width: 350px;
+}
+.book-title-admin {
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+}
+.book-author-admin {
+  color: var(--muted-text);
+  font-size: 0.875rem;
+  font-style: italic;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: transparent;
+}
+.table th,
+.table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+.table thead th {
+  background: var(--surface-color);
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  color: var(--muted-text);
+}
+.table tbody tr:hover {
+  background: var(--secondary-color);
+}
+
+/* specific books table */
+.books-table-enhanced {
+  width: 100%;
+  border-collapse: collapse;
+}
+.books-table-enhanced thead {
+  background: #f1f5f9;
+}
+.books-table-enhanced th {
+  padding: 1.1rem;
+  font-weight: 600;
+  color: var(--muted-text);
+  font-size: 0.88rem;
+  text-transform: uppercase;
+}
+.books-table-enhanced td {
+  padding: 1.1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+.books-table-enhanced tbody tr:hover {
+  background: var(--background-mint);
+}
+
+.selected-row {
+  background: #e0f2fe !important;
+}
+.checkbox-col {
+  width: 56px;
+  text-align: center;
+}
+.checkbox-col input {
+  width: 18px;
+  height: 18px;
+}
+
+.book-details-cell {
+  max-width: 350px;
+}
+.book-title-admin {
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+}
+.book-author-admin {
+  color: var(--muted-text);
+  font-size: 0.875rem;
+  font-style: italic;
+}
